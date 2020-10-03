@@ -10,7 +10,7 @@ const Dis='https://discord.gg/7H5xzF4';
 
 client.once('ready',() => {
     console.log('Shinbot is online ');
-    client.user.setActivity('Berozgaari Bhattao', {type: 'WATCHING'});
+    client.user.setActivity('Berozgaari Bhatta', {type: 'WATCHING'});
     
 });
 client.on('message',message =>{
@@ -107,6 +107,7 @@ client.on('message',message =>{
                         .setColor(0x285eee)
 
                         .addField("BOT STATUS","**THE BOT IS NOW 24/7 online**")
+                        .setThumbnail("https://i.pinimg.com/originals/aa/92/25/aa922544d0f9fa0f673a6e95c5738644.gif")
 
                         message.channel.send(ob4);    
                         break;
