@@ -92,7 +92,7 @@ client.on('message',message =>{
                 case "help":
                     const ob2 = new Discord.MessageEmbed()
                     .setColor(0x285eee)
-                    .addField("Bot Commands","Make sure to use **!!** before any command and avoid mentioning any user \n\n The Commands are:\n\n1)shin=`BOT`\n\n2)sup=`Greeting`\n\n3)dubey=`YT channel link`\n\n4)mafmaf=`YT Channel link`\n\n5)munne=`YT channel link`\n\n6)setu=`Random Message`\n\n7)dubeyid=`Steam ID`\n\n8)sijid=`Shin Sij ID`\n\n9)shinboii=**A GIF**\n\n10)av=`Avatar`")
+                    .addField("Bot Commands","Make sure to use **!!** before any command and avoid mentioning any user \n\n The Commands are:\n\n1)shin=`GIF`\n\n2)sup=`Greeting`\n\n3)dubey=`YT channel link`\n\n4)mafmaf=`YT Channel link`\n\n5)munne=`YT channel link`\n\n6)setu=`Random Message`\n\n7)dubeyid=`Steam ID`\n\n8)sijid=`Shin Sij ID`\n\n9)shinboii=**A GIF**\n\n10)av=`Avatar`")
                     .setThumbnail("https://i.kym-cdn.com/photos/images/original/001/115/767/74f.gif")       
                     .setFooter("Shinboii","https://media.tenor.com/images/9b8ccce68cac07626e71be1fbe01652a/tenor.gif")
                     message.reply(ob2);
