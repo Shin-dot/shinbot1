@@ -114,12 +114,7 @@ client.on('message',message =>{
 
     }    
 });
-client.on("guildMemberUpdate", member =>{
-    const channel = member.guild.channels.cache.find(channel => channel.name == "welcome");
-    if(!channel)return;
 
-    channel.send(`Welcome to the server ${member},Read the rules and enjoy your stay here `);
-});
 
 
 client.login(process.env.token);
