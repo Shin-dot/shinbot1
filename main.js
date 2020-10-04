@@ -118,18 +118,8 @@ client.on("guildMemberUpdate", member =>{
     const channel = member.guild.channels.cache.find(channel => channel.name == "welcome");
     if(!channel)return;
 
-    const wel = new Discord.MessageEmbed()
-      
-       .setColor(0x9BD149)
-       .addField("WELCOME",`Welcome to the server ${member},Read the rules before proceeding,Enjoy your stay here!! :smile: `)
-       
-       
-       .setImage("https://media.giphy.com/media/fU4elxKlRsulB4Jy7w/giphy.gif")
-
-
-      channel.send(wel);
+    channel.send(`Welcome to the server ${member},Read the rules and enjoy your stay here `);
 });
-
 
 
 client.login(process.env.token);
