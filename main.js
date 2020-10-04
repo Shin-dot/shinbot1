@@ -122,7 +122,7 @@ client.on("guildMemberUpdate", member =>{
       
        .setColor(0x9BD149)
        .addField("WELCOME",`Welcome to the server ${member},Read the rules before proceeding,Enjoy your stay here!! :smile: `)
-       .setThumbnail(message.author.displayAvatarURL())
+       
        
        .setImage("https://media.giphy.com/media/fU4elxKlRsulB4Jy7w/giphy.gif")
 
