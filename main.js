@@ -114,6 +114,12 @@ client.on('message',message =>{
 
     }    
 });
+client.on("guildMemberUpdate", member =>{
+    const channel = member.guild.channels.cache.find(channel => channel.name == "welcome");
+    if(!channel)return;
+
+    message.channel.send(`Welcome to the server ${member},Read the rules and enjoy your stay here  https://media.giphy.com/media/fU4elxKlRsulB4Jy7w/giphy.gif`)
+});
 
 
 client.login(process.env.token);
