@@ -127,7 +127,7 @@ client.on("guildMemberUpdate", member =>{
        .setImage("https://media.giphy.com/media/fU4elxKlRsulB4Jy7w/giphy.gif")
 
 
-      message.channel.send(wel);
+      channel.send(wel);
 });
 
 
