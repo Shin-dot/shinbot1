@@ -111,10 +111,24 @@ client.on('message',message =>{
 
                         message.channel.send(ob4);    
                         break;
+                        
 
     }    
 });
+client.on("guildMemberAdd",member =>{
+    const channel = member.guild.channels.cache.find(channel => channel.name =="welcome");
+    if(!channel)return;
 
+              const wel = new Discord.MessageEmbed()
+                
+
+                 
+                 
+                 .setImage("https://images.squarespace-cdn.com/content/v1/5bc4706dda50d36591e0fa6c/1541410208009-4D7FYMVJ60TTSBQR1A2O/ke17ZwdGBToddI8pDm48kAo5hOrm8llRsBaTYpjFAa4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKckD_Zh99vqejjsB-y7kz0e0Nnq8Il8pgyLL50MAcJUGnwhbkpOClyM_h3tB17VnXM/WW+1803+-+Welcome+GIF+1.1.gif")
+
+
+                channel.send(wel);
+});
 
 
 client.login(process.env.token);
