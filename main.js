@@ -10,7 +10,7 @@ const Dis='https://discord.gg/7H5xzF4';
 
 client.once('ready',() => {
     console.log('Shinbot is online ');
-    client.user.setActivity('Berozgaari Bhatta', {type: 'WATCHING'});
+    client.user.setActivity('!!help ', {type: 'PLAYING'});
     
 });
 client.on('message',message =>{
