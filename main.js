@@ -78,6 +78,7 @@ client.on('message',message =>{
                  .setThumbnail(message.author.displayAvatarURL())
                  .addField('Name',message.author.username)
                  .addField('Server Name',message.guild.name)
+                 .setTimestamp();
 
 
                 message.channel.send(ob);
