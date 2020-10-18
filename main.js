@@ -10,7 +10,7 @@ const Dis='https://discord.gg/7H5xzF4';
 
 client.once('ready',() => {
     console.log('Shinbot is online ');
-    client.user.setActivity('!!help ', {type: 'PLAYING'});
+    client.user.setActivity('!!help || SHINBOII ', {type: 'PLAYING'});
     
 });
 client.on('message',message =>{
@@ -127,7 +127,7 @@ client.on("guildMemberAdd",member =>{
 
                  
                  .addField("Welcome",`Welcome to the server ${member},\nRead the rules before proceeding\n\nEnjoy your stay here!! :wink:`)
-                 .setImage("https://images.squarespace-cdn.com/content/v1/5bc4706dda50d36591e0fa6c/1541410208009-4D7FYMVJ60TTSBQR1A2O/ke17ZwdGBToddI8pDm48kAo5hOrm8llRsBaTYpjFAa4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKckD_Zh99vqejjsB-y7kz0e0Nnq8Il8pgyLL50MAcJUGnwhbkpOClyM_h3tB17VnXM/WW+1803+-+Welcome+GIF+1.1.gif")
+                 .setImage("https://media.giphy.com/media/fU4elxKlRsulB4Jy7w/giphy.gif")
                   .setThumbnail(member.user.avatarURL())
 
                 channel.send(wel);
